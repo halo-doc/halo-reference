@@ -1,5 +1,5 @@
 site:
-  title: Spring
+  title: Halo
   url: https://docs.spring.io/spring-security/
 asciidoc:
   attributes:
@@ -21,7 +21,7 @@ urls:
   redirect_facility: httpd
 ui:
   bundle:
-    url: https://github.com/spring-io/antora-ui-spring/releases/download/latest/ui-bundle.zip
+    url: https://github.com/halo-doc/antora-ui-halo/releases/download/latest/ui-bundle.zip
     snapshot: true
 
 pipeline:
