@@ -21,7 +21,7 @@ urls:
   redirect_facility: httpd
 ui:
   bundle:
-    url: https://github.com/halo-doc/antora-ui-halo/releases/download/latest/ui-bundle.zip
+    url: https://github.com/halo-doc/antora-ui-halo/releases/download/halo/ui-bundle.zip
     snapshot: true
 
 pipeline:
