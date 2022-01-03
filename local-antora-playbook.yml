@@ -1,22 +1,19 @@
 site:
   title: Spring
-  start_page: ROOT:ROOT:index.adoc
+  start_page: component-b::index.adoc
 asciidoc:
   attributes:
     page-pagination: true
 content:
   sources:
-    - url: ../../spring-projects/spring-security
-      branches: [HEAD]
+    - url: https://gitlab.com/antora/demo/demo-component-a.git
+      branches: master
+    - url: https://gitlab.com/antora/demo/demo-component-b.git
+      branches: [v2.0, v1.0]
       start_path: docs
-    - url: ../../spring-io/spring-generated-docs
-      branches: [ spring-security/main,spring-session/main ]
-    - url: ../../spring-projects/spring-session
-      branches: HEAD
-      start_path: spring-session-docs
 ui:
   bundle:
-    url: https://github.com/spring-io/antora-ui-spring/releases/download/latest/ui-bundle.zip
+    url: ./ui-theme/ui-bundle.zip
     snapshot: true
 
 pipeline:
