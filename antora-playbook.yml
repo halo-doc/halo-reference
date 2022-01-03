@@ -1,27 +1,19 @@
 site:
-  title: Halo
-  url: https://docs.spring.io/spring-security/
+  title: Spring
+  start_page: component-b::index.adoc
 asciidoc:
   attributes:
     page-pagination: true
 content:
   sources:
-    - url: https://github.com/spring-projects/spring-security
-      branches: [main,5.6.x]
-      
+    - url: https://gitlab.com/antora/demo/demo-component-a.git
+      branches: master
+    - url: https://gitlab.com/antora/demo/demo-component-b.git
+      branches: [v2.0, v1.0]
       start_path: docs
-    - url: https://github.com/spring-io/spring-generated-docs
-      branches: [spring-projects/spring-security/*,spring-projects/spring-session/main]
-    - url: https://github.com/spring-projects/spring-session
-      branches: [main]
-      start_path: spring-session-docs
-urls:
-  latest_version_segment_strategy: redirect:to
-  latest_version_segment: ''
-  redirect_facility: httpd
 ui:
   bundle:
-    url: https://github.com/halo-doc/antora-ui-halo/releases/download/halo/ui-bundle.zip
+    url: ./ui-theme/ui-bundle.zip
     snapshot: true
 
 pipeline:
